@@ -1,0 +1,38 @@
+#!/usr/bin/env ruby
+# -*- coding: utf-8 -*-
+
+
+compile '/stylesheet/' do
+        # don’t filter or layout
+end
+
+compile '/icons/*' do
+end
+
+compile '/papers/*' do
+end
+
+compile '*' do
+        filter :erb
+        layout 'default'
+end
+
+
+route '/stylesheet/' do
+        '/style.css'
+end
+
+route '/icons/*' do
+        @item.identifier.chop + '.' + @item[:extension]
+end
+
+route '/papers/*' do
+        @item.identifier.chop + '.' + @item[:extension]
+end
+
+route '*' do
+        item.identifier + 'index.html'
+end
+
+
+layout '*', :erb
