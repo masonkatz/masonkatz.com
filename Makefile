@@ -1,5 +1,5 @@
 
-NANOC = nanoc3
+NANOC = nanoc3-1.8
 
 default: build
 
