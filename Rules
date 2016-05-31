@@ -6,6 +6,9 @@ compile '/stylesheet/' do
         # don’t filter or layout
 end
 
+compile '/js/*' do
+end
+
 compile '/icons/*' do
 end
 
@@ -20,6 +23,10 @@ end
 
 route '/stylesheet/' do
         '/style.css'
+end
+
+route '/js/*' do
+        @item.identifier.chop + '.' + @item[:extension]
 end
 
 route '/icons/*' do
