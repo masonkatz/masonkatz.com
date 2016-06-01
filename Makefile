@@ -1,13 +1,12 @@
-
-NANOC = nanoc3-1.8
-
 default: build
 
 build:
-	$(NANOC) compile
+	hugo
 
-install: build
-	cp -aR output/* /Library/WebServer/Documents/ 
+.PHONY: sync
+sync: build
+	( cd public; s3cmd sync * s3://www.masonkatz.com; )
 
 clean:
-	rm -rf output tmp
+	-rm -rf public
+
