@@ -13,7 +13,7 @@ googleAnalytics = "UA-23092909-1"
 	# Personal settings
 	
         name = "Mason Katz"
-	position = "gen-xer ex-zonie engineer"
+	position = "gen-x former-zonie engineer"
 	copyright = "2016 mason katz"
 	
 	# Extra stuff
@@ -30,6 +30,6 @@ googleAnalytics = "UA-23092909-1"
     linkedin        = "masonkatz"
     twitter	    = "masonkatz"
     github	    = "masonkatz"
-#    strava	    = "97562"
+    strava	    = "97562"
 
 
