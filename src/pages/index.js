@@ -1,3 +1,20 @@
 import React from 'react'
 
-export default () => <div>Hello world!</div>
+import { Section } from '../components/Resume'
+import { Experience } from '../components/Experience'
+import { Publications } from '../components/Publications'
+import { Education } from '../components/Education'
+
+export default () => (
+  <div>
+    <Section title="Experience">
+      <Experience />
+    </Section>
+    <Section title="Publications">
+      <Publications />
+    </Section>
+    <Section title="Education">
+      <Education />
+    </Section>
+  </div>
+)
