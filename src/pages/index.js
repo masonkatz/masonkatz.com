@@ -5,6 +5,8 @@ import { Experience } from '../components/Experience'
 import { Publications } from '../components/Publications'
 import { Education } from '../components/Education'
 
+import 'bootstrap/dist/css/bootstrap.min.css'
+
 export default () => (
   <div>
     <Section title="Experience">

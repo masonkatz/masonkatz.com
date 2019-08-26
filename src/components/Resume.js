@@ -1,94 +1,158 @@
 import React from 'react'
-import Link from '@material-ui/core/Link'
-import Typography from '@material-ui/core/Typography'
-import Grid from '@material-ui/core/Grid'
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+import Badge from 'react-bootstrap/Badge'
+
+/* #cv p {
+ *     text-align: justify;
+ * }
+ *
+ * #cv h3 {
+ *     margin-bottom: 8px;
+ * }
+ */
+
+const styles = {
+  section: {
+    title: {
+      textTransform: 'uppercase',
+    },
+  },
+  employer: {
+    link: {
+      textAlign: 'right',
+      alignSelf: 'center',
+    },
+  },
+  department: {
+    link: {
+      textAlign: 'right',
+      alignSelf: 'center',
+    },
+  },
+  job: {
+    dates: {
+      textAlign: 'right',
+      fontStyle: 'italic',
+      fontSize: '14px',
+      alignSelf: 'center',
+    },
+  },
+  publication: {
+    title: {
+      textDecoration: 'underline',
+    },
+    journal: {
+      fontStyle: 'italic',
+    },
+    link: {
+      fontVariant: 'small-caps',
+      fontWeight: 'bold',
+      fontSize: '13px',
+    },
+  },
+}
 
 export const Section = props => (
-  <Grid container spacing={3} direction="column">
-    <Grid item>
-      <Typography variant="h2">{props.title}</Typography>
-    </Grid>
-    <Grid item>{props.children}</Grid>
-  </Grid>
+  <Container>
+    <Row>
+      <Col xs="12" style={styles.section.title}>
+        <h2>{props.title}</h2>
+        <hr></hr>
+      </Col>
+    </Row>
+    <Row>
+      <Col xs="12">{props.children}</Col>
+    </Row>
+  </Container>
 )
 
 export const Employer = props => (
-  <Grid container>
-    <Grid item xs={6}>
-      <Typography variant="h3">{props.name}</Typography>
-    </Grid>
-    <Grid item xs={6}>
-      <Typography>
-        <Link href={'http://' + props.web}>{props.web}</Link>
-      </Typography>
-    </Grid>
-    <Grid item xs={12}>
+  <div>
+    <Container>
+      <Row>
+        <Col xs={12} md={9}>
+          <h3>{props.name}</h3>
+        </Col>
+        <Col xs={12} md={3}>
+          <div style={styles.employer.link}>
+            <a href={'http://' + props.web}>{props.web}</a>
+          </div>
+        </Col>
+      </Row>
       {props.children}
-    </Grid>
-    <Grid item xs={12}>
-      <br></br>
-    </Grid>
-  </Grid>
+    </Container>
+    <br></br>
+  </div>
 )
 
 export const Department = props => (
-  <Grid container>
-    <Grid item xs={6}>
-      <Typography variant="h4">{props.name}</Typography>
-    </Grid>
-    <Grid item xs={6}>
-      <Typography>
-        <Link href={'http://' + props.web}>{props.web}</Link>
-      </Typography>
-    </Grid>
-    <Grid item xs={12}>
-      {props.children}
-    </Grid>
-  </Grid>
+  <div>
+    <Row>
+      <Col xs={12} md={9}>
+        <h4>{props.name}</h4>
+      </Col>
+      <Col xs={12} md={3} style={styles.department.link}>
+        <a href={'http://' + props.web}>{props.web}</a>
+      </Col>
+    </Row>
+    {props.children}
+  </div>
 )
 
 export const Job = props => (
-  <Grid container>
-    <Grid item xs={6}>
-      <Typography variant="h4">{props.title}</Typography>
-    </Grid>
-    <Grid item xs={6}>
-      <Typography variant="h4">{props.dates}</Typography>
-    </Grid>
-    <Grid item xs={10}>
-      {props.children}
-    </Grid>
-  </Grid>
+  <div>
+    <Row>
+      <Col xs={12} md={9}>
+        <h5>{props.title}</h5>
+      </Col>
+      <Col xs={12} md={3} style={styles.job.dates}>
+        <i>{props.dates}</i>
+      </Col>
+    </Row>
+    <Row>
+      <Col>{props.children}</Col>
+    </Row>
+  </div>
 )
 
 export const Bullet = props => (
-  <Grid container>
-    <Grid item xs={12}>
-      <Typography variant="body1">{props.children}</Typography>
-    </Grid>
-  </Grid>
+  <Container>
+    <Row>
+      <Col xs={12}>{props.children}</Col>
+    </Row>
+  </Container>
 )
 
 export const Publication = props => (
-  <Typography variant="body1">
-    {props.title}. {props.authors}. {props.journal}. {props.issue}
-    <Link href={props.url}> [link] </Link>
-  </Typography>
+  <Container>
+    <Row>
+      <Col xs={12}>
+        <span style={styles.publication.title}>{props.title}</span>.{' '}
+        <span style={styles.publication.authors}>{props.authors}</span>.{' '}
+        <span style={styles.publication.journal}>{props.journal}</span>.{' '}
+        <span style={styles.publication.issue}>{props.issue}</span>{' '}
+        <span style={styles.publication.link}>
+          <a href={props.url}>[link]</a>
+        </span>
+      </Col>
+    </Row>
+  </Container>
 )
 
 export const Degree = props => (
-  <Grid container>
-    <Grid item xs={6}>
-      <Typography variant="h3">{props.school}</Typography>
-    </Grid>
-    <Grid item xs={6}>
-      <Typography variant="h4">{props.date}</Typography>
-    </Grid>
-    <Grid item xs={12}>
-      <Typography variant="body1">{props.degree}</Typography>
-    </Grid>
-    <Grid item xs={12}>
-      <Typography variant="body1">{props.major}</Typography>
-    </Grid>
-  </Grid>
+  <Container>
+    <Row>
+      <Col xs={12} md={6}>
+        <h3>{props.school}</h3>
+      </Col>
+      <Col xs={12} md={6}>
+        <h3>{props.date}</h3>
+      </Col>
+    </Row>
+    <Row>
+      <Col xs={12}>{props.major}</Col>
+    </Row>
+  </Container>
 )
