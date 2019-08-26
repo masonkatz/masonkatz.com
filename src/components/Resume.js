@@ -35,7 +35,6 @@ const styles = {
     dates: {
       textAlign: 'right',
       fontStyle: 'italic',
-      fontSize: '14px',
       alignSelf: 'center',
     },
   },
@@ -50,6 +49,15 @@ const styles = {
       fontVariant: 'small-caps',
       fontWeight: 'bold',
       fontSize: '13px',
+    },
+  },
+  degree: {
+    school: {},
+    major: {},
+    date: {
+      textAlign: 'right',
+      fontStyle: 'italic',
+      alignSelf: 'center',
     },
   },
 }
@@ -129,13 +137,15 @@ export const Publication = props => (
   <Container>
     <Row>
       <Col xs={12}>
-        <span style={styles.publication.title}>{props.title}</span>.{' '}
-        <span style={styles.publication.authors}>{props.authors}</span>.{' '}
-        <span style={styles.publication.journal}>{props.journal}</span>.{' '}
-        <span style={styles.publication.issue}>{props.issue}</span>{' '}
-        <span style={styles.publication.link}>
-          <a href={props.url}>[link]</a>
-        </span>
+        <p>
+          <span style={styles.publication.title}>{props.title}</span>.{' '}
+          <span style={styles.publication.authors}>{props.authors}</span>.{' '}
+          <span style={styles.publication.journal}>{props.journal}</span>.{' '}
+          <span style={styles.publication.issue}>{props.issue}</span>{' '}
+          <span style={styles.publication.link}>
+            <a href={props.url}>[link]</a>
+          </span>
+        </p>
       </Col>
     </Row>
   </Container>
@@ -144,15 +154,17 @@ export const Publication = props => (
 export const Degree = props => (
   <Container>
     <Row>
-      <Col xs={12} md={6}>
+      <Col xs={12} md={9} style={styles.degree.school}>
         <h3>{props.school}</h3>
       </Col>
-      <Col xs={12} md={6}>
-        <h3>{props.date}</h3>
+      <Col xs={12} md={3} style={styles.degree.date}>
+        {props.date}
       </Col>
     </Row>
     <Row>
-      <Col xs={12}>{props.major}</Col>
+      <Col xs={12} style={styles.degree.major}>
+        {props.major}
+      </Col>
     </Row>
   </Container>
 )

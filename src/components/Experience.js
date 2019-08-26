@@ -1,10 +1,4 @@
 import React from 'react'
-import { makeStyles, createStyles, Theme } from '@material-ui/core/styles'
-import Link from '@material-ui/core/Link'
-import Typography from '@material-ui/core/Typography'
-import Paper from '@material-ui/core/Paper'
-import Grid from '@material-ui/core/Grid'
-
 import { Employer, Department, Job, Bullet } from '../components/Resume'
 
 export const Experience = props => (
@@ -21,9 +15,9 @@ export const Experience = props => (
         dates="Feb. 2011 - July 2017"
       >
         <Bullet>
-          Leading commercialization effort of open-source
-          <Link href="http://www.rocksclusters.org"> Rocks Clusters </Link>
-          software into public and private clouds.
+          Leading commercialization effort of open-source{' '}
+          <a href="http://www.rocksclusters.org">Rocks Clusters</a> software
+          into public and private clouds.
         </Bullet>
       </Job>
       <Job title="Board Member" dates="Feb. 2011 - ?"></Job>
@@ -48,8 +42,8 @@ export const Experience = props => (
       <Job title="Programmer/Analyst III" dates="Jun. 1999 - May 2000">
         <Bullet>
           Member of software team developing first generation Windows NT
-          clustering software, which ran in production at
-          <Link href="http://www.ncsa.illinois.edu/"> NCSA </Link>. Developed a
+          clustering software, which ran in production at{' '}
+          <a href="http://www.ncsa.illinois.edu/">NCSA</a>. Developed a
           lock-free shared memory transport for MPI and custom firmware on
           Myrinet network cards.
         </Bullet>
