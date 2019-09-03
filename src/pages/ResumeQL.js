@@ -8,7 +8,13 @@ import {
   Job,
   Bullet,
   Degree,
+  Publication,
 } from '../components/Resume'
+
+import { Experience } from '../components/Experience'
+import { Education } from '../components/Education'
+import { Publications } from '../components/Publications'
+
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 const extract = (data, key) => {
@@ -20,53 +26,22 @@ const extract = (data, key) => {
   return items.reduce((array, elem) => array.concat(elem), [])
 }
 
-//export const Experience= props => (
-
-export default ({ data }) => {
-  let experience = extract(data, 'experience')
-  let degree = extract(data, 'degree')
-
-  //  console.log(experience)
-  return (
-    <>
-      <Navbar bg="light" expand="lg" sticky="top">
-        <Navbar.Brand>masonkatz.com</Navbar.Brand>
-      </Navbar>
-      <Section>
-        {experience.map(e => (
-          <Employer name={e.company} web={e.web}>
-            {e.position.map(position => (
-              <>
-                {position.department !== null ? (
-                  <Department name={position.department} web={position.web} />
-                ) : (
-                  <></>
-                )}
-                <Job title={position.title} dates={position.dates}>
-                  {position.desc !== null ? (
-                    position.desc.map(bullet => <Bullet>{bullet}</Bullet>)
-                  ) : (
-                    <></>
-                  )}
-                </Job>
-              </>
-            ))}
-          </Employer>
-        ))}
-      </Section>
-      <Section>
-        {degree.map(d => (
-          <Degree
-            date={d.date}
-            school={d.school}
-            major={d.major}
-            degree={d.degree}
-          />
-        ))}
-      </Section>
-    </>
-  )
-}
+export default ({ data }) => (
+  <>
+    <Navbar bg="light" expand="lg" sticky="top">
+      <Navbar.Brand>masonkatz.com</Navbar.Brand>
+    </Navbar>
+    <Section title="Experience">
+      <Experience data={extract(data, 'experience')} />
+    </Section>
+    <Section title="Publications">
+      <Publications data={extract(data, 'publication')} />
+    </Section>
+    <Section title="Education">
+      <Education data={extract(data, 'degree')} />
+    </Section>
+  </>
+)
 
 export const query = graphql`
   query {
@@ -89,6 +64,14 @@ export const query = graphql`
             degree
             major
             date
+          }
+          publication {
+            title
+            authors
+            journal
+            issue
+            web
+            pdf
           }
         }
       }

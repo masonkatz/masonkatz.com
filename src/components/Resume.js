@@ -54,6 +54,7 @@ const styles = {
   degree: {
     school: {},
     major: {},
+    degree: {},
     date: {
       textAlign: 'right',
       fontStyle: 'italic',
@@ -159,6 +160,11 @@ export const Degree = props => (
       </Col>
       <Col xs={12} md={3} style={styles.degree.date}>
         {props.date}
+      </Col>
+    </Row>
+    <Row>
+      <Col xs={12} style={styles.degree.degree}>
+        {props.degree}
       </Col>
     </Row>
     <Row>
