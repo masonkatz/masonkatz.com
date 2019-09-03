@@ -1,0 +1,67 @@
+experience:
+  
+  - company: Teradata
+    web: teradata.com
+    position:
+      - title: Director, Software Architecture
+        dates: July 2017 - present
+        desc:
+          - stuff 1
+          - stuff 2
+        
+  - company: StackIQ
+    web: stackiq.com
+    position:
+      - title: Co-founder / Chief Technical Officer
+        dates: Feb. 2011 - July 2017
+        desc:
+          - Leading commercialization effort of open-source <a href="http://www.rocksclusters.org">Rocks Clusters</a> software into public and private clouds.
+      - title: Board Member
+        dates: Feb. 2011 - 2013
+      
+  - company: San Diego Supercomputer Center
+    web: sdsc.edu
+    position:
+      - title: Group Lead, Cluster Development
+        dates: Feb. 2002 - Feb. 2011
+        desc:
+          - Supervised Rocks software development team while functioning as a lead developer and architect on the project. During this time Rocks grew from a user community of a few hundred to several thousand (estimated 10k+ clusters world-wide).
+      - title: Programmer/Analyst III
+        dates: May 2000 - Feb. 2002
+        desc:
+          - Co-founder and architect of the Rocks Clusters project.
+          
+  - company: University of California, San Diego
+    web: ucsd.edu
+    position:
+      - department: Department of Computer Science and Engineering
+        web: cse.ucsd.edu
+        title: Programmer/Analyst III
+        dates: Jun. 1999 - May 2000
+        desc:
+          - md//Member of software team developing first generation Windows NT clustering software, which ran in production at <a href="http://www.ncsa.illinois.edu/">NCSA</a>. Developed a lock-free shared memory transport for MPI and custom firmware on Myrinet network cards.
+
+  - company: University of Arizona
+    web: arizona.edu
+    position:
+      - department: Department of Computer Science
+        web: cs.arizona.edu
+        title: Systems Programmer, Principal
+        dates: Feb. 1996 - Jun. 1999
+        desc:
+          - Developed networking protocols (IPv6, IPSec) and drivers for embedded and user-space operating systems. Managed software releases, user support, and prepared grant reports.
+
+  - company: Global Atmospherics
+    position:
+      - title: Software Engineer
+        dates: Jun. 1991 - Feb. 1996
+        desc:
+          - Designed and authored software for a range of embedded weather sensors (z80, 80186, SunOS). Ported software onto new hardware platforms, authored and debugged a terminal driver with nothing more than 8 LEDs and an oscilloscope.
+
+  - company: Micro-Guys Consulting
+    position:
+      - title: Co-founder
+        dates: Jan. 1990 - Dec. 1990
+        desc:
+          - Created a company to tutor computer science students, and sell computer equipment.
+
