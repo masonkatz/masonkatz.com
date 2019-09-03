@@ -4,7 +4,7 @@ import { Employer, Department, Job, Bullet } from '../components/Resume'
 export const Experience = props => (
   <div>
     <Employer name="Teradata" web="teradata.com">
-      <Job title="Director Software Engineering" dates="July 2017 - present">
+      <Job title="Director, Software Architecture" dates="July 2017 - present">
         <Bullet>bullet number one</Bullet>
         <Bullet>bullet number two</Bullet>
       </Job>

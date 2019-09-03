@@ -5,5 +5,19 @@
  */
 
 module.exports = {
-  /* Your site config here */
+  plugins: [
+    {
+      resolve: `gatsby-transformer-yaml-plus`,
+      options: {
+        enableRemark: true,
+        markdownPreface: 'md//',
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `./src/content/`,
+      },
+    },
+  ],
 }

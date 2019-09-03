@@ -1,22 +1,11 @@
 import React from 'react'
-
-import { Section } from '../components/Resume'
-import { Experience } from '../components/Experience'
-import { Publications } from '../components/Publications'
-import { Education } from '../components/Education'
-
+import Navbar from 'react-bootstrap/Navbar'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 export default () => (
   <div>
-    <Section title="Experience">
-      <Experience />
-    </Section>
-    <Section title="Publications">
-      <Publications />
-    </Section>
-    <Section title="Education">
-      <Education />
-    </Section>
+    <Navbar bg="light" expand="lg" sticky="top">
+      <Navbar.Brand>masonkatz.com</Navbar.Brand>
+    </Navbar>
   </div>
 )
