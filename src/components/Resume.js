@@ -22,20 +22,20 @@ const styles = {
   employer: {
     link: {
       textAlign: 'right',
-      alignSelf: 'center',
+      //      alignSelf: 'center',
     },
   },
   department: {
     link: {
       textAlign: 'right',
-      alignSelf: 'center',
+      alignSelf: 'bottom',
     },
   },
   job: {
     dates: {
       textAlign: 'right',
       fontStyle: 'italic',
-      alignSelf: 'center',
+      alignSelf: 'bottom',
     },
   },
   publication: {
