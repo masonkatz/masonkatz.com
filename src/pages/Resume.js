@@ -1,15 +1,7 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import Navbar from 'react-bootstrap/Navbar'
-import {
-  Section,
-  Employer,
-  Department,
-  Job,
-  Bullet,
-  Degree,
-  Publication,
-} from '../components/Resume'
+import { Section } from '../components/Resume'
 
 import { Experience } from '../components/Experience'
 import { Education } from '../components/Education'
