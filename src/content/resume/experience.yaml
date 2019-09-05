@@ -17,7 +17,7 @@ experience:
         desc:
           - Architected and developed closed-source extensions to Rocks to expand beyond HPC systems and into general purpose workloads
           - Software sold to Enterprise accounts with largest users running 3000+ nodes
-          - Open-sourced extensions as Stacki
+          - md//Open-sourced extensions as [Stacki](http://github.com/Teradata/stacki)
   #      - title: Board Member
   #        dates: Feb. 2011 - 2013
 
@@ -38,14 +38,14 @@ experience:
         dates: May 2000 - Feb. 2002
         desc:
           - Developed (c, python) and architected software for building managing Linux HPC commodity clusters
-          - Open-sourced software as the Rocks Cluster Toolkit
+          - md//Open-sourced software as the [Rocks Cluster Toolkit](http://www.rocksclusters.org)
       - department: Department of Computer Science and Engineering
         web: cse.ucsd.edu
         title: Programmer/Analyst III
         dates: Jun. 1999 - May 2000
         desc:
           - Developed (c/c++) a lock-free shared memory transport for MPI with custom Myrinet network card firmware
-          - Supported research users at the National Center for Supercomputing Applications (NCSA)
+          - md//Supported research users at the National Center for Supercomputing Applications ([NCSA](http://ncsa.illinois.edu))
           - Co-managed Windows NT clusters for research group
 
   - company: University of Arizona

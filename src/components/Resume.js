@@ -126,14 +126,6 @@ export const Job = props => (
   </div>
 )
 
-export const Bullet = props => (
-  <Container>
-    <Row>
-      <Col xs={12}>{props.children}</Col>
-    </Row>
-  </Container>
-)
-
 export const Publication = props => (
   <Container>
     <Row>
