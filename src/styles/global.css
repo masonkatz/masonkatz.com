@@ -1,12 +1,11 @@
 * {
-    font-family: Georgia, Palatino, Times, 'Times New Roman', sans-serif;
+  font-family: Georgia, Palatino, Times, 'Times New Roman', sans-serif;
 }
 
 a:link,
 a:visited {
-    color: #f30;
+  color: #f30;
 }
 a:hover {
-    color: #f90;
+  color: #f90;
 }
-
