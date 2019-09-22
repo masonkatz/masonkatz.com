@@ -1,10 +1,11 @@
 import React from 'react'
 import { Publication } from '../components/Resume'
 
-export const Publications = ({ data }) => (
+export const Publications = props => (
   <>
-    {data.map(p => (
+    {props.data.map(p => (
       <Publication
+        printable={props.printable}
         title={p.title}
         authors={
           p.authors.slice(0, -1).join(', ') + ' and ' + p.authors.slice(-1)

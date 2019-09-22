@@ -1,30 +1,33 @@
 import React from 'react'
 import { Employer, Department, Job } from '../components/Resume'
-import ReactHtmlParser, {
-  processNodes,
-  convertNodeToElement,
-  htmlparser2,
-} from 'react-html-parser'
+import ReactHtmlParser, { convertNodeToElement } from 'react-html-parser'
 
-export const Experience = ({ data }) => (
+export const Experience = props => (
   <>
-    {data.map(e => (
-      <Employer name={e.company} web={e.web}>
+    {props.data.map(e => (
+      <Employer printable={props.printable} name={e.company} web={e.web}>
         {e.position.map(position => (
           <>
             {position.department !== null ? (
-              <Department name={position.department} web={position.web} />
+              <Department
+                printable={props.printable}
+                name={position.department}
+                web={position.web}
+              />
             ) : (
               <></>
             )}
             <Job title={position.title} dates={position.dates}>
-              {console.log(position.desc)}
               <ul>
                 {position.desc !== null ? (
                   position.desc.map(bullet => {
-                    // React escapes all string so we need to parse the bullets
-                    // for html tags, while at it nuke the <p> that markdown adds.
+                    if (props.printable) {
+                      // remove <a> tags for printing (could also do with css)
+                      bullet = bullet.replace(/<a/g, '<span ')
+                      bullet = bullet.replace(/<\/a>/g, '</span>')
+                    }
                     const transform = node => {
+                      // remove the outermost <p> that Reach MD inserts.
                       if (node.type === 'tag' && node.name === 'p') {
                         node.name = 'span'
                         return convertNodeToElement(node)
