@@ -1,0 +1,172 @@
+publication:
+  - title: The OptIPortal, a scalable visualization, storage, and computing interface device for the OptiPuter
+    authors:
+      - Thomas A. DeFanti
+      - Jason Leigh
+      - Luc Renambot
+      - Byungil Jeong
+      - Alan Verlo
+      - Lance Long
+      - Maxine Brown
+      - Daniel J. Sandin
+      - Venkatram Vishwanath
+      - Qian Liu
+      - Mason J. Katz
+      - Philip Papadopoulos
+      - Joseph P. Keefe
+      - Gregory R. Hidley
+      - Gregory L. Dawe
+      - Ian Kaufman
+      - Bryan Glogowski
+      - Kai-Uwe Doerr
+      - Rajvikram Singh
+      - Javier Girado
+      - Jurgen P. Schulze
+      - Larry Smarr
+    journal: Future Generation Computer Systems
+    issue: Feb. 2009, Volume 25, Issue 2, pg. 114-123
+    web: https://www.sciencedirect.com/science/article/pii/S0167739X08001040
+
+  - title: Lessons learned through driving science applications in the PRAGMA grid
+    authors:
+      - Cindy Zheng
+      - Mason J. Katz
+      - Phil M. Papadopoulos
+      - David Abramson
+      - Shahaan Ayyub
+      - Colin Enticott
+      - Slavisa Garic
+      - Wojtek Goscinski
+      - Peter Arzberger
+      - Bu Sung Lee
+      - Sugree Phatanapherom
+      - Somsak Sriprayoonsakul
+      - Putchong Uthayopas
+      - Yoshio Tanaka
+      - Yusuke Tanimura
+      - Osamu Tatebe
+    journal: International Journal of Web and Grid Services
+    issue: 2007, Volume 3, Issue 3, pg. 287-312
+    pdf: zheng07-ijwgs.pdf
+
+  - title: Beyond Beowulf Clusters
+    authors:
+      - Philip Papadopoulos
+      - Greg Bruno
+      - Mason Katz
+    journal: ACM Queue
+    issue: Apr. 2007, Volume 5, Issue 3, pg. 36-43
+    pdf: papadopoulos07-queue.pdf
+
+  - title: 'The PRAGMA Testbed: Building a Multi-Application International Grid'
+    authors:
+      - Cindy Zheng
+      - David Abramson
+      - Peter Arzberger
+      - Shahaan Ayyub
+      - Colin Enticott
+      - Slavisa Garic
+      - Mason J. Katz
+      - Jae-Hyuck Kwak
+      - Bu Sung Lee
+      - Phil M. Papadopoulos
+      - Sugree Phatanapherom
+      - Somsak Sriprayoonsakul
+      - Yoshio Tanaka
+      - Yusuke Tanimura
+      - Osamu Tatebe
+      - Putchong Uthayopas
+    journal: CCGrid
+    issue: Singapore, May 2006
+    pdf: zheng06-ccgrid.pdf
+
+  - title: Incorporation of middleware and grid technologies to enhance usability in Computational Chemistry Applications
+    authors:
+      - Jerry P. Greenberg
+      - Steve Mock
+      - Karan Bhatia
+      - Mason Katz
+      - Greg Bruno
+      - Federico Sacerdoti
+      - Phil Papadopoulos
+      - Kim K. Baldridge
+    journal: Future Generation Computer Systems
+    issue: Jan. 2005, Volume 21, Issue 1, pg. 3-10
+    web: https://www.sciencedirect.com/science/article/pii/S0167739X04001347
+
+  - title: 411 on Scalable Password Service
+    authors:
+      - Federico D. Sacerdoti
+      - Mason J. Katz
+      - Philip M. Papadopoulos
+    journal: IEEE HPDC
+    issue: North Carolina, July 2005
+    pdf: sacerdoti05-hpdc.pdf
+
+  - title: 'Rolls: Modifying a Standard System Installer to Support User-Customizable Cluster Frontend Appliances'
+    authors:
+      - Greg Bruno
+      - Mason J. Katz
+      - Federico D. Sacerdoti
+      - Philip M. Papadopoulos
+    journal: IEEE International Conference on Cluster Computing
+    issue: San Diego, California, Sep. 2004
+    pdf: bruno04-cluster.pdf
+
+  - title: 'NPACI Rocks: tools and techniques for easily deploying manageable Linux clusters'
+    authors:
+      - Philip M. Papadopoulos
+      - Mason J. Katz
+      - Greg Bruno
+    journal: 'Concurrency and Computation: Practice and Experience'
+    issue: 2003, Volume 15, Issue 7-8, pg. 707-725
+    pdf: papadopoulos03-concurrency.pdf
+
+  - title: Wide Area Cluster Monitoring with Ganglia
+    authors:
+      - Federico D. Sacerdoti
+      - Mason J. Katz
+      - Matthew L. Massie
+      - David E. Culler
+    journal: IEEE International Conference on Cluster Computing
+    issue: Hong Kong, Dec. 2003
+    pdf: sacerdoti03-cluster.pdf
+
+  - title: 'Configuring Large High-Performance Clusters at Lightspeed: A Case Study'
+    authors:
+      - Philip M. Papadopoulos
+      - Caroline A. Papadopoulos
+      - Mason J. Katz
+      - William J. Link
+      - Greg Bruno
+    journal: Clusters and Computational Grids for Scientific Computing
+    issue: Chateau de Faberges-de-la-Tour, France , Sep. 2002
+    pdf: papadopoulos02-ccgsc.pdf
+
+  - title: Leveraging Standard Core Technologies to Programmatically Build Linux Cluster Appliances
+    authors:
+      - Mason J. Katz
+      - Philip M. Papadopoulos
+      - Greg Bruno
+    journal: IEEE International Conference on Cluster Computing
+    issue: Chicago, Illinois, Oct. 2002
+    pdf: katz02-cluster.pdf
+
+  - title: 'NPACI Rocks: Tools and Techniques for Easily Deploying Manageable Linux Clusters'
+    authors:
+      - Philip M. Papadopoulos
+      - Mason J. Katz
+      - Greg Bruno
+    journal: IEEE International Conference on Cluster Computing
+    issue: New Port Beach, California, Oct. 2001
+    pdf: papadopoulos01-cluster.pdf
+
+  - title: Performance Enhancements for HPVM with Heterogeneous Messaging Substrates and Commodity Hardware
+    authors:
+      - Greg Bruno
+      - Andrew. A. Chien
+      - Mason J. Katz
+      - Philip M. Papadopoulos
+    journal: PDC Annual Conference
+    issue: Sweden, Dec. 1999
+    pdf: bruno99-pdc.pdf

@@ -1,0 +1,77 @@
+experience:
+  - company: Teradata
+    web: teradata.com
+    position:
+      - title: Director, Software Architecture
+        dates: July 2017 - present
+        desc:
+          - StackIQ acquisition, came over with entire engineering team
+          - Architect for software provisioning of next generation database and machine learning platform
+          - Integrated Stacki into the product line, and supporting field use to re-provision/upgrade customer systems
+
+  - company: StackIQ
+    web: stackiq.com
+    position:
+      - title: Co-founder / Chief Technical Officer
+        dates: Feb. 2011 - July 2017
+        desc:
+          - Architected and developed closed-source extensions to Rocks to expand beyond HPC systems and into general purpose workloads
+          - Software sold to Enterprise accounts with largest users running 3000+ nodes
+          - md//Open-sourced extensions as [Stacki](http://github.com/Teradata/stacki)
+  #      - title: Board Member
+  #        dates: Feb. 2011 - 2013
+
+  - company: University of California, San Diego
+    web: ucsd.edu
+    position:
+      - department: San Diego Supercomputer Center
+        web: sdsc.edu
+        title: Group Lead, Cluster Development
+        dates: Feb. 2002 - Feb. 2011
+        desc:
+          - Supervised Rocks software development team while functioning as a lead developer and architect
+          - Developed cluster solutions for tile-display visualization clusters, and grids of clusters
+          - Grew Rocks from a user community of a few hundred to several thousand (estimated 10k+ clusters world-wide)
+          - Co-Principal Investigator on multiple National Science Foundation (NSF) grants
+          - Co-managed Linux clusters for research users
+      - title: Programmer/Analyst III
+        dates: May 2000 - Feb. 2002
+        desc:
+          - Developed (c, python) and architected software for building managing Linux HPC commodity clusters
+          - md//Open-sourced software as the [Rocks Cluster Toolkit](http://www.rocksclusters.org)
+      - department: Department of Computer Science and Engineering
+        web: cse.ucsd.edu
+        title: Programmer/Analyst III
+        dates: Jun. 1999 - May 2000
+        desc:
+          - Developed (c/c++) a lock-free shared memory transport for MPI with custom Myrinet network card firmware
+          - md//Supported research users at the National Center for Supercomputing Applications ([NCSA](http://ncsa.illinois.edu))
+          - Co-managed Windows NT clusters for research group
+
+  - company: University of Arizona
+    web: arizona.edu
+    position:
+      - department: Department of Computer Science
+        web: cs.arizona.edu
+        title: Systems Programmer, Principal
+        dates: Feb. 1996 - Jun. 1999
+        desc:
+          - Developed (c/c++) networking protocols (IPv6, IPSec) and drivers for embedded and user-space operating systems
+          - Ported user-space networking stack into the Linux kernel
+          - Managed software releases, user support, and prepared grant reports
+
+  - company: Global Atmospherics
+    position:
+      - title: Software Engineer
+        dates: Jun. 1991 - Feb. 1996
+        desc:
+          - Embedded (z80, 80186) development (c/c++, asm) for lightining detecting weather sensors
+          - Integrating first generation GPS units into sensors for high resolution time keeping
+          - Ported analysis software from SunOS (BSD) to Solaris (SysV)
+#  - company: Micro-Guys Consulting
+#    position:
+#      - title: Co-founder
+#        dates: Jan. 1990 - Dec. 1990
+#        desc:
+#          - Created a company to tutor computer science students, and sell computer equipment.
+
