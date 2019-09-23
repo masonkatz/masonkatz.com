@@ -51,6 +51,9 @@ export default props => {
       <Section title="Education">
         <Education printable={printable} data={extract(data, 'degree')} />
       </Section>
+      <br />
+      <br />
+      <br />
     </>
   )
 }
