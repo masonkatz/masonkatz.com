@@ -7,8 +7,6 @@ import { Experience } from '../components/Experience'
 import { Education } from '../components/Education'
 import { Publications } from '../components/Publications'
 
-import 'bootstrap/dist/css/bootstrap.min.css'
-
 const extract = (data, key) => {
   // Return a single array with only non-null values for the KEY lookup
   // Or an Object if this isn't array data

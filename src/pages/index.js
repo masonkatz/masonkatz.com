@@ -1,8 +1,9 @@
 import React from 'react'
+import styles from '../assets/sass/main.module.scss'
 
 const Identity = props => (
   <header>
-    <span className="avatar">
+    <span className={styles.avatar}>
       <img height="128px" alt="" src={props.image} />
     </span>
     <br />
@@ -14,12 +15,13 @@ const Identity = props => (
 
 const Social = props => (
   <footer>
-    <ul className="icons">
+    <ul className={styles.icons}>
       {props.links.map(social => {
         const { icon, url } = social
+        console.log(icon)
         return (
           <li>
-            <a href={url} className={`icon ${icon}`} />
+            <a href={url} className={styles.icon + ' ' + icon} />
           </li>
         )
       })}
@@ -30,8 +32,8 @@ const Social = props => (
 const Footer = props => {
   const date = new Date()
   return (
-    <footer id="footer">
-      <ul className="copyright">
+    <footer id={styles.footer}>
+      <ul className={styles.copyright}>
         <li>
           &copy; {date.getFullYear()} {props.author}
         </li>
@@ -41,12 +43,11 @@ const Footer = props => {
 }
 
 export default () => {
-  require('../assets/sass/main.scss')
   const headshot = require('../assets/images/mason.jpg')
   return (
-    <div className={'main-body'}>
-      <div id="wrapper">
-        <section id="main">
+    <div className={styles.mainBody}>
+      <div id={styles.wrapper}>
+        <section id={styles.main}>
           <Identity image={headshot} title="Mason J. Katz" />
           <Social
             links={[

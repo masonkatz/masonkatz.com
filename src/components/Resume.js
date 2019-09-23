@@ -2,6 +2,7 @@ import React from 'react'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
+import { H1, H2, H3, H4, H5 } from './Common'
 
 /* #cv p {
  *     text-align: justify;
@@ -74,11 +75,11 @@ const styles = {
 }
 
 export const Section = props => (
-  <Container>
+  <Container style={{ margin: '0' }}>
     <Row>
       <Col xs="12" style={styles.section.title}>
-        <h2>{props.title}</h2>
-        <hr></hr>
+        <H1>{props.title}</H1>
+        <hr style={{ marginTop: '0', marginBottom: '1em' }}></hr>
       </Col>
     </Row>
     <Row>
@@ -120,7 +121,7 @@ export const Employer = props => (
     <Container>
       <Row>
         <Col xs={12} md={9}>
-          <h3>{props.name}</h3>
+          <H2>{props.name}</H2>
         </Col>
         {props.printable ? (
           <></>
@@ -134,7 +135,6 @@ export const Employer = props => (
       </Row>
       {props.children}
     </Container>
-    <br></br>
   </div>
 )
 
@@ -142,7 +142,7 @@ export const Department = props => (
   <div>
     <Row>
       <Col xs={12} md={9}>
-        <h4>{props.name}</h4>
+        <H3>{props.name}</H3>
       </Col>
       {props.printable ? (
         <></>
@@ -160,7 +160,7 @@ export const Job = props => (
   <div>
     <Row>
       <Col xs={12} md={9}>
-        <h5>{props.title}</h5>
+        <H4>{props.title}</H4>
       </Col>
       <Col xs={12} md={3} style={styles.job.dates}>
         <i>{props.dates}</i>
@@ -198,7 +198,7 @@ export const Degree = props => (
   <Container>
     <Row>
       <Col xs={12} md={9} style={styles.degree.school}>
-        <h3>{props.school}</h3>
+        <H2>{props.school}</H2>
       </Col>
       <Col xs={12} md={3} style={styles.degree.date}>
         {props.date}

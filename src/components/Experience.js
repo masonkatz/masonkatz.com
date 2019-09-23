@@ -18,7 +18,7 @@ export const Experience = props => (
               <></>
             )}
             <Job title={position.title} dates={position.dates}>
-              <ul>
+              <ul style={{ paddingLeft: '2em' }}>
                 {position.desc !== null ? (
                   position.desc.map(bullet => {
                     if (props.printable) {
@@ -33,7 +33,11 @@ export const Experience = props => (
                         return convertNodeToElement(node)
                       }
                     }
-                    return <li>{ReactHtmlParser(bullet, { transform })}</li>
+                    return (
+                      <li style={{ paddingLeft: 0, marginBottom: '.5em' }}>
+                        {ReactHtmlParser(bullet, { transform })}
+                      </li>
+                    )
                   })
                 ) : (
                   <></>
