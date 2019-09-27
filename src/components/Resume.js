@@ -172,27 +172,31 @@ export const Job = props => (
   </div>
 )
 
-export const Publication = props => (
-  <Container>
-    <Row>
-      <Col xs={12}>
-        <p>
-          <span style={styles.publication.title}>{props.title}</span>.{' '}
-          <span style={styles.publication.authors}>{props.authors}</span>.{' '}
-          <span style={styles.publication.journal}>{props.journal}</span>.{' '}
-          <span style={styles.publication.issue}>{props.issue}</span>{' '}
-          {props.printable ? (
-            <></>
-          ) : (
-            <span style={styles.publication.link}>
-              <a href={props.url}>[link]</a>
-            </span>
-          )}
-        </p>
-      </Col>
-    </Row>
-  </Container>
-)
+export const Publication = props => {
+  const url = props.web || props.pdf
+  const label = props.web ? 'link' : 'pdf'
+  return (
+    <Container>
+      <Row>
+        <Col xs={12}>
+          <p>
+            <span style={styles.publication.title}>{props.title}</span>.{' '}
+            <span style={styles.publication.authors}>{props.authors}</span>.{' '}
+            <span style={styles.publication.journal}>{props.journal}</span>.{' '}
+            <span style={styles.publication.issue}>{props.issue}</span>{' '}
+            {props.printable ? (
+              <></>
+            ) : (
+              <span style={styles.publication.link}>
+                <a href={url}>[{label}]</a>
+              </span>
+            )}
+          </p>
+        </Col>
+      </Row>
+    </Container>
+  )
+}
 
 export const Degree = props => (
   <Container>

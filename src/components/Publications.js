@@ -12,7 +12,8 @@ export const Publications = props => (
         }
         journal={p.journal}
         issue={p.issue}
-        url={p.web !== null ? p.web : p.pdf}
+        web={p.web}
+        pdf={p.pdf}
       />
     ))}
   </>
