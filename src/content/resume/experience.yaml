@@ -2,12 +2,13 @@ experience:
   - company: Teradata
     web: teradata.com
     position:
-      - title: Director, Software Architecture
+      - title: Director
         dates: July 2017 - present
         desc:
           - StackIQ acquisition, came over with entire engineering team
-          - Architect for software provisioning of next generation database and machine learning platform
           - Integrated Stacki into the product line, and supporting field use to re-provision/upgrade customer systems
+          - Managed a small group of software architects
+          - Managed Kubernetes group, mix of developer and SREs
 
   - company: StackIQ
     web: stackiq.com
@@ -19,7 +20,7 @@ experience:
           - Software sold to Enterprise accounts with largest users running 3000+ nodes
           - md//Open-sourced extensions as [Stacki](http://github.com/Teradata/stacki)
   #      - title: Board Member
-  #        dates: Feb. 2011 - 2013
+  #        dates: Nov 2006 - May 2014
 
   - company: University of California, San Diego
     web: ucsd.edu
@@ -33,7 +34,7 @@ experience:
           - Developed cluster solutions for tile-display visualization clusters, and grids of clusters
           - Grew Rocks from a user community of a few hundred to several thousand (estimated 10k+ clusters world-wide)
           - Co-Principal Investigator on multiple National Science Foundation (NSF) grants
-          - Co-managed Linux clusters for research users
+          - Managed Linux clusters for research users
       - title: Programmer/Analyst III
         dates: May 2000 - Feb. 2002
         desc:
@@ -44,9 +45,9 @@ experience:
         title: Programmer/Analyst III
         dates: Jun. 1999 - May 2000
         desc:
-          - Developed (c/c++) a lock-free shared memory transport for MPI with custom Myrinet network card firmware
+          - Developed (c/c++) a lock-free shared memory transport for MPI with custom firmware for Myrinet network card
           - md//Supported research users at the National Center for Supercomputing Applications ([NCSA](http://ncsa.illinois.edu))
-          - Co-managed Windows NT clusters for research group
+          - Managed Windows NT clusters for research group
 
   - company: University of Arizona
     web: arizona.edu
@@ -65,7 +66,7 @@ experience:
       - title: Software Engineer
         dates: Jun. 1991 - Feb. 1996
         desc:
-          - Embedded (z80, 80186) development (c/c++, asm) for lightining detecting weather sensors
+          - Embedded (z80, 80186) development (c/c++, asm) for lightning detecting weather sensors
           - Integrating first generation GPS units into sensors for high resolution time keeping
           - Ported analysis software from SunOS (BSD) to Solaris (SysV)
 #  - company: Micro-Guys Consulting
