@@ -79,6 +79,7 @@ export const query = graphql`
           }
           experience {
             company
+	    note
             web
             position {
               department

@@ -74,7 +74,7 @@ const styles = {
   },
 }
 
-export const Section = props => (
+export const Section = (props) => (
   <Container style={{ margin: '0' }}>
     <Row>
       <Col xs="12" style={styles.section.title}>
@@ -88,7 +88,7 @@ export const Section = props => (
   </Container>
 )
 
-export const Contact = props => (
+export const Contact = (props) => (
   <>
     <Container>
       <Row>
@@ -116,7 +116,7 @@ export const Contact = props => (
   </>
 )
 
-export const Employer = props => (
+export const Employer = (props) => (
   <div>
     <Container>
       <Row>
@@ -133,12 +133,17 @@ export const Employer = props => (
           </Col>
         )}
       </Row>
+      {props.note != null ? (
+        <Row>
+          <H5>({props.note})</H5>
+        </Row>
+      ) : null}
       {props.children}
     </Container>
   </div>
 )
 
-export const Department = props => (
+export const Department = (props) => (
   <div>
     <Row>
       <Col xs={12} md={9}>
@@ -156,7 +161,7 @@ export const Department = props => (
   </div>
 )
 
-export const Job = props => (
+export const Job = (props) => (
   <div>
     <Row>
       <Col xs={12} md={9}>
@@ -172,7 +177,7 @@ export const Job = props => (
   </div>
 )
 
-export const Publication = props => {
+export const Publication = (props) => {
   const url = props.web || props.pdf
   const label = props.web ? 'link' : 'pdf'
   return (
@@ -198,7 +203,7 @@ export const Publication = props => {
   )
 }
 
-export const Degree = props => (
+export const Degree = (props) => (
   <Container>
     <Row>
       <Col xs={12} md={9} style={styles.degree.school}>

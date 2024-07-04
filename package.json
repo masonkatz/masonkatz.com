@@ -3,37 +3,31 @@
   "private": true,
   "description": "A simplified bare-bones starter for Gatsby",
   "version": "0.1.0",
-  "license": "MIT",
+  "license": "0BSD",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "start": "npm run develop",
+    "start": "gatsby develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
-    "@material-ui/core": "^4.9.10",
-    "bootstrap": "^4.4.1",
-    "gatsby": "^2.20.18",
-    "gatsby-cli": "^2.11.7",
-    "gatsby-plugin-google-analytics": "^2.2.2",
-    "gatsby-plugin-sass": "^2.2.1",
-    "gatsby-source-filesystem": "^2.2.2",
-    "gatsby-transformer-remark": "^2.7.1",
-    "gatsby-transformer-yaml-plus": "^0.2.2",
-    "node-sass": "^4.13.1",
-    "react": "^16.13.1",
-    "react-bootstrap": "^1.0.0",
-    "react-dom": "^16.13.1",
-    "react-html-parser": "^2.0.2",
-    "remark-html": "^10.0.0",
-    "typeface-roboto": "0.0.75"
-  },
-  "devDependencies": {
-    "husky": "^3.1.0",
-    "prettier": "^1.19.1",
-    "pretty-quick": "^1.11.1"
+    "bootstrap": "^5.3.3",
+    "gatsby": "^5.13.5",
+    "gatsby-cli": "^5.13.3",
+    "gatsby-plugin-google-analytics": "^5.13.1",
+    "gatsby-plugin-sass": "^6.13.1",
+    "gatsby-source-filesystem": "^5.13.1",
+    "gatsby-transformer-remark": "^6.13.1",
+    "gatsby-transformer-yaml-plus": "^5.0.0",
+    "html-react-parser": "^5.1.10",
+    "node-sass": "^9.0.0",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.10.4",
+    "react-dom": "^18.2.0",
+    "remark-html": "^16.0.1",
+    "typeface-roboto": "^1.1.13"
   },
   "repository": {
     "type": "git",
@@ -41,10 +35,5 @@
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "pretty-quick --staged"
-    }
   }
 }
