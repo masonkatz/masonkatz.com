@@ -20,7 +20,7 @@ const extract = (data, key) => {
   }
 }
 
-export default props => {
+const main = props => {
   const data = props.data
   const params = new URLSearchParams(props.location.search)
   const contact = extract(data, 'contact')
@@ -57,6 +57,8 @@ export default props => {
     </>
   )
 }
+
+export default main;
 
 export const query = graphql`
   query {

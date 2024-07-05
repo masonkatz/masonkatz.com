@@ -1,11 +1,20 @@
-* {
-  font-family: Georgia, Palatino, Times, 'Times New Roman', sans-serif;
+.body {
+    font-family: "Helvetica Neue" , Helvetica , Arial , Verdana , Roboto , sans-serif;
+    /* font-family: Georgia, Palatino, Times, 'Times New Roman', sans-serif; */
 }
 
-a:link,
-a:visited {
-  color: #f30;
+.navbar {
+    padding-left: 1rem;
+}
+
+.h6 {
+    font-size: 0.75rem;
+}
+
+a {
+    color: #f30;
+    text-decoration: none;
 }
 a:hover {
-  color: #f90;
+    color: #000;
 }
