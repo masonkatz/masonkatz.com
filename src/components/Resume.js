@@ -135,7 +135,7 @@ export const Employer = (props) => (
       </Row>
       {props.note != null ? (
         <Row>
-	    <H5>({props.note})</H5>
+          <H5>({props.note})</H5>
         </Row>
       ) : null}
       {props.children}

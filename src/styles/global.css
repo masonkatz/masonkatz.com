@@ -1,20 +1,20 @@
 .body {
-    font-family: "Helvetica Neue" , Helvetica , Arial , Verdana , Roboto , sans-serif;
-    /* font-family: Georgia, Palatino, Times, 'Times New Roman', sans-serif; */
+  font-family: 'Helvetica Neue', Helvetica, Arial, Verdana, Roboto, sans-serif;
+  /* font-family: Georgia, Palatino, Times, 'Times New Roman', sans-serif; */
 }
 
 .navbar {
-    padding-left: 1rem;
+  padding-left: 1rem;
 }
 
 .h6 {
-    font-size: 0.75rem;
+  font-size: 0.75rem;
 }
 
 a {
-    color: #f30;
-    text-decoration: none;
+  color: #f30;
+  text-decoration: none;
 }
 a:hover {
-    color: #000;
+  color: #000;
 }

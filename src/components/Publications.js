@@ -1,9 +1,9 @@
 import React from 'react'
 import { Publication } from '../components/Resume'
 
-export const Publications = props => (
+export const Publications = (props) => (
   <>
-    {props.data.map(p => (
+    {props.data.map((p) => (
       <Publication
         printable={props.printable}
         title={p.title}
