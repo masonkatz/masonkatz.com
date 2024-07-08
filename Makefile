@@ -1,12 +1,10 @@
-default: build
+BUILDER=./.builder
+RULES=gatsby
+include $(BUILDER)/rules.mk
 
-build:
-	hugo
+$(BUILDER)/rules.mk:
+	-go run github.com/endobit/builder@latest init
 
-.PHONY: sync
-sync: build
-	( cd public; s3cmd sync * s3://www.masonkatz.com; )
-
-clean:
-	-rm -rf public
-
+.PHONY: serve
+serve: ## dynamically serve the site
+	$(MAKE) gatsby-serve
