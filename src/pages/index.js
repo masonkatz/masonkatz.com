@@ -16,7 +16,7 @@ const main = (props) => {
 	    <Navbar bg="light" expand="lg" sticky="top">
 		<Navbar.Brand href="/">Mason Katz</Navbar.Brand>
 		<Nav>
-		    <Nav.Link href="/Resume">cv</Nav.Link>
+		    <Nav.Link href="/Resume">about</Nav.Link>
 		</Nav>
 	    </Navbar>
 
