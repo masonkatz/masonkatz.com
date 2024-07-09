@@ -43,10 +43,7 @@ const main = props => {
         <Experience printable={printable} data={extract(data, 'experience')} />
       </Section>
       <Section title="Publications">
-        <Publications
-          printable={printable}
-          data={extract(data, 'publication')}
-        />
+        <Publications printable={printable} data={extract(data, 'publication')} />
       </Section>
       <Section title="Education">
         <Education printable={printable} data={extract(data, 'degree')} />
