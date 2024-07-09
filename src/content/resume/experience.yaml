@@ -7,7 +7,7 @@ experience:
         desc:
           - md//Lead architecture and development (Go) of system-wide [API](https://github.com/SoftIron/manifold-api) (REST & gRPC) for managing private cloud product.
           - Lead re-architecting and development (Go) of virtual machine snapshotting over Ceph RBD images and S3.
-          - Refactor (c, python, go) of a propriery SMB stack to provide Highly-Available Windows file sharing over Ceph.
+          - Refactor (C, Python, Go) of a propriery SMB stack to provide Highly-Available Windows file sharing over Ceph.
 
   - company: Teradata
     web: teradata.com
