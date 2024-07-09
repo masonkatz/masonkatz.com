@@ -8,7 +8,7 @@ import Row from 'react-bootstrap/Row';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons'
 
-import headshot from '../assets/images/mason.jpg'
+import headshot from '../images/mason.jpg'
 
 const main = (props) => {
     return (

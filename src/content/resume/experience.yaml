@@ -5,9 +5,9 @@ experience:
       - title: Chief Architect
         dates: August 2020 - present
         desc:
-          - md//Lead architecture and development (go) of system-wide [API](https://github.com/SoftIron/manifold-api) (REST & gRPC) for managing private cloud product.
-          - Lead re-architecting and development (go) of virtual machine snapshotting over Ceph RBD images and S3.
-          - Refactor (c, python, go) of a propriery SMB stack to provide Highly-Available Windows file sharing over Ceph.
+          - md//Lead architecture and development (go) of system-wide [API](https://github.com/SoftIron/manifold-api) (REST & gRPC) for managing private cloud product
+          - Lead re-architecting and development (go) of virtual machine snapshotting over Ceph RBD images and S3
+          - Refactor (c, python, go) of a propriery SMB stack to provide Highly-Available Windows file sharing over Ceph
 
   - company: Teradata
     web: teradata.com
@@ -15,8 +15,8 @@ experience:
       - title: Director
         dates: July 2017 - August 2020
         desc:
-          - Lead integration of Stacki into Teradata mainline database and machine learning products.
-          - Enabled customer support teams to remotely re-provision database systems in the field.
+          - Lead integration of Stacki into Teradata mainline database and machine learning products
+          - Enabled customer support teams to remotely re-provision database systems in the field
           - Managed a small group of software architects
           - Managed Kubernetes group, mix of Go developers and SREs
 
@@ -26,7 +26,7 @@ experience:
       - title: Co-founder / Chief Technical Officer
         dates: Feb. 2011 - July 2017
         desc:
-          - Architected and developed (python) closed-source extensions to Rocks to expand beyond HPC systems and into general purpose workloads
+          - Architected and developed (python) closed-source extensions to Rocks to expand beyond HPC systems and into general purpose datacenter workloads
           - Software sold to Enterprise accounts with largest users running 3000+ nodes
           - md//Open-sourced extensions as [Stacki](http://github.com/Teradata/stacki)
       # - title: Board Member
@@ -40,15 +40,15 @@ experience:
         title: Group Lead, Cluster Development
         dates: Feb. 2002 - Feb. 2011
         desc:
-          - Supervised Rocks software development team while functioning as a lead developer and architect
+          - Managed software team while functioning as a lead developer and architect
           - Developed cluster solutions for tile-display visualization clusters, and grids of clusters
-          - Grew Rocks from a user community of a few hundred to several thousand (estimated 10k+ clusters world-wide)
+          - Grew Rocks opensource community from few hundred to several thousand (estimated 10k+ clusters world-wide)
           - Co-Principal Investigator on multiple National Science Foundation (NSF) grants
           - Managed Linux clusters for research users
       - title: Programmer/Analyst III
         dates: May 2000 - Feb. 2002
         desc:
-          - Developed (c, python) and architected software for building managing Linux HPC commodity clusters
+          - Developed (c, python) and architected software for building managing Linux High Performance Computing (HPC)  commodity clusters
           - md//Open-sourced software as the [Rocks Cluster Toolkit](http://www.rocksclusters.org)
       - department: Department of Computer Science and Engineering
         web: cse.ucsd.edu
@@ -67,7 +67,7 @@ experience:
         title: Systems Programmer, Principal
         dates: Feb. 1996 - Jun. 1999
         desc:
-          - Developed (c/c++) networking protocols (IPv6, IPSec) and drivers for embedded and user-space operating systems
+          - Developed (c/c++) networking protocols (IPv6, IPSec) and drivers for embedded and user-space operating systems (scout, x-kernel)
           - Ported user-space networking stack into the Linux kernel
           - Managed software releases, user support, and prepared grant reports
 
