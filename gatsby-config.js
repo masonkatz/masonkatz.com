@@ -12,9 +12,11 @@ module.exports = {
       options: {
           allowList: [
 	      'PRIVATE_ADDRESS_STREET',
+	      'PRIVATE_ADDRESS_CITY',
 	      'PRIVATE_ADDRESS_STATE',
 	      'PRIVATE_ADDRESS_ZIPCODE',
-	      'PRIVATE_PHONE'
+	      'PRIVATE_PHONE',
+	      'PRIVATE_EMAIL'
 	  ],
       },
     },
