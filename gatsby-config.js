@@ -8,6 +8,17 @@ module.exports = {
   plugins: [
     `gatsby-plugin-sass`,
     {
+      resolve: 'gatsby-plugin-env-variables',
+      options: {
+          allowList: [
+	      'PRIVATE_ADDRESS_STREET',
+	      'PRIVATE_ADDRESS_STATE',
+	      'PRIVATE_ADDRESS_ZIPCODE',
+	      'PRIVATE_PHONE'
+	  ],
+      },
+    },
+    {
       resolve: `gatsby-transformer-yaml-plus`,
       options: {
         enableRemark: true,

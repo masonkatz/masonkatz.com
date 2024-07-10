@@ -12,7 +12,7 @@ const extract = (data, key) => {
   // Or an Object if this isn't array data
   let items = data.allResumeYaml.edges
     .map(({ node }) => node[key])
-    .filter(item => item !== null)
+    .filter((item) => item !== null)
   if (Array.isArray(items[0])) {
     return items.reduce((array, elem) => array.concat(elem), [])
   } else {
@@ -20,16 +20,18 @@ const extract = (data, key) => {
   }
 }
 
-const main = props => {
+const main = (props) => {
   const data = props.data
   const params = new URLSearchParams(props.location.search)
   const contact = extract(data, 'contact')
   const printable = params.has('printable')
+  const links = !params.has('nolinks')
+
   return (
     <>
       {printable ? (
         <Section title={contact.public.name}>
-          <Contact data={contact} />
+          <Contact links={links} data={contact} />
         </Section>
       ) : (
         <>
@@ -39,14 +41,15 @@ const main = props => {
           <br />
         </>
       )}
+
       <Section title="Experience">
-        <Experience printable={printable} data={extract(data, 'experience')} />
+        <Experience links={links} data={extract(data, 'experience')} />
       </Section>
       <Section title="Publications">
-        <Publications printable={printable} data={extract(data, 'publication')} />
+        <Publications links={links} data={extract(data, 'publication')} />
       </Section>
       <Section title="Education">
-        <Education printable={printable} data={extract(data, 'degree')} />
+        <Education links={links} data={extract(data, 'degree')} />
       </Section>
       <br />
       <br />
@@ -55,7 +58,7 @@ const main = props => {
   )
 }
 
-export default main;
+export default main
 
 export const query = graphql`
   query {
@@ -78,7 +81,7 @@ export const query = graphql`
           }
           experience {
             company
-	    note
+            note
             web
             position {
               department

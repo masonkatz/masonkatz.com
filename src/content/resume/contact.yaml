@@ -7,8 +7,8 @@ contact:
     linkedin: masonkatz
     github: masonkatz
   private:
-    address: 4881 Academy St
-    city: San Diego
-    state: California
-    zipcode: 92109
-    phone: +1.619.200.6923
+    address: address
+    city: city
+    state: state
+    zipcode: zipcode
+    phone: phone

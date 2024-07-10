@@ -91,24 +91,29 @@ export const Contact = (props) => (
   <>
     <Container>
       <Row>
-        <Col>{props.data.private.address}</Col>
-        <Col style={styles.contact.web}>
-          {props.data.public.web}
-        </Col>
+        <Col>{process.env.PRIVATE_ADDRESS_STREET}</Col>
+
+        {!props.links ? (
+          <Col xs={12} md={3} style={styles.department.link}>
+            {props.data.public.web}
+          </Col>
+        ) : (
+          <Col xs={12} md={3} style={styles.department.link}>
+            <a href={'http://' + props.data.public.web}>
+              {props.data.public.web}
+            </a>
+          </Col>
+        )}
       </Row>
       <Row>
         <Col>
-          {props.data.private.city}, {props.data.private.state}
+          {process.env.PRIVATE_ADDRESS_CITY}, {process.env.PRIVATE_ADDRESS_STATE}
         </Col>
-        <Col style={styles.contact.email}>
-          {props.data.public.email}
-        </Col>
+        <Col style={styles.contact.email}>{process.env.PRIVATE_EMAIL}</Col>
       </Row>
       <Row>
-        <Col>{props.data.private.zipcode}</Col>
-        <Col style={styles.contact.phone}>
-          {props.data.private.phone}
-        </Col>
+        <Col>{process.env.PRIVATE_ADDRESS_ZIPCODE}</Col>
+        <Col style={styles.contact.phone}>{process.env.PRIVATE_PHONE}</Col>
       </Row>
     </Container>
     <br />
@@ -122,7 +127,7 @@ export const Employer = (props) => (
         <Col xs={12} md={9}>
           <h3>{props.name}</h3>
         </Col>
-        {props.printable ? (
+        {!props.links ? (
           <></>
         ) : (
           <Col xs={12} md={3}>
@@ -148,7 +153,7 @@ export const Department = (props) => (
       <Col xs={12} md={9}>
         <h4>{props.name}</h4>
       </Col>
-      {props.printable ? (
+      {!props.links ? (
         <></>
       ) : (
         <Col xs={12} md={3} style={styles.department.link}>
@@ -188,7 +193,7 @@ export const Publication = (props) => {
             <span style={styles.publication.authors}>{props.authors}</span>.{' '}
             <span style={styles.publication.journal}>{props.journal}</span>.{' '}
             <span style={styles.publication.issue}>{props.issue}</span>{' '}
-            {props.printable ? (
+            {!props.links ? (
               <></>
             ) : (
               <span style={styles.publication.link}>

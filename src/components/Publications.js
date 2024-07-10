@@ -5,7 +5,7 @@ export const Publications = (props) => (
   <>
     {props.data.map((p) => (
       <Publication
-        printable={props.printable}
+        links={props.links}
         title={p.title}
         authors={
           p.authors.slice(0, -1).join(', ') + ' and ' + p.authors.slice(-1)
