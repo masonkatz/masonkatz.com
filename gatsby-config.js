@@ -33,11 +33,11 @@ module.exports = {
         path: `./src/content/`,
       },
     },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: 'G-7Z20CPLY74',
+      {
+	  resolve: `gatsby-plugin-google-gtag`,
+	  options: {
+              trackingIds: [ 'G-7Z20CPLY74' ],
+	  },
       },
-    },
   ],
 }
