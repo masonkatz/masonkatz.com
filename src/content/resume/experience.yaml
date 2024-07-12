@@ -26,6 +26,7 @@ experience:
       - title: Co-founder / Chief Technical Officer
         dates: Feb. 2011 - July 2017
         desc:
+          - Partnered with Amazon to dynamically build linux clusters inside of EC2.
           - Architected and developed (Python) closed-source extensions to Rocks to expand beyond HPC systems and into general purpose datacenter workloads.
           - Software sold to Enterprise accounts, with largest users running 3000+ nodes.
           - md//Open-sourced extensions as [Stacki](http://github.com/Teradata/stacki).
