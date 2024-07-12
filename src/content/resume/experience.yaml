@@ -5,8 +5,8 @@ experience:
       - title: Chief Architect
         dates: August 2020 - present
         desc:
-          - md//Lead architecture and development (Go) of system-wide [API](https://github.com/SoftIron/manifold-api) (REST & gRPC) for managing private cloud product.
-          - Lead re-architecting and development (Go) of virtual machine snapshotting over Ceph RBD images and S3.
+          - md//Led architecture and development (Go) of system-wide [API](https://github.com/SoftIron/manifold-api) (REST & gRPC) for managing private cloud product.
+          - Led re-architecting and development (Go) of virtual machine snapshotting over Ceph RBD images and S3.
           - Refactor (C, Python, Go) of a propriery SMB stack to provide Highly-Available Windows file sharing over Ceph.
 
   - company: Teradata
@@ -15,7 +15,7 @@ experience:
       - title: Director
         dates: July 2017 - August 2020
         desc:
-          - Lead integration of Stacki into Teradata mainline database and machine learning products.
+          - Led integration of Stacki into Teradata mainline database and machine learning products.
           - Enabled customer support teams to remotely re-provision database systems in the field.
           - Managed a small group of software architects.
           - Managed Kubernetes group, mix of Go developers and SREs.
@@ -41,21 +41,21 @@ experience:
         dates: Feb. 2002 - Feb. 2011
         desc:
           - Managed software team while functioning as a lead developer and architect.
-          - Developed cluster solutions for tile-display visualization clusters, and grids of clusters.
-          - Grew Rocks opensource community from few hundred to several thousand (estimated 10k+ clusters world-wide).
+          - Developed (Python, C++) cluster solutions for tile-display visualization clusters, and grids of clusters.
+          - Grew Rocks opensource community from few hundred to several thousand (with 10k+ clusters world-wide, and multiple Top500 systems).
           - Co-Principal Investigator on multiple National Science Foundation (NSF) grants.
           - Managed Linux clusters for research users.
       - title: Programmer/Analyst III
         dates: May 2000 - Feb. 2002
         desc:
-          - Developed (C, Python) and architected software for building managing Linux High Performance Computing (HPC) commodity clusters.
+          - Developed (Python, C) and architected software for building managing Linux High Performance Computing (HPC) commodity clusters.
           - md//Open-sourced software as the [Rocks Cluster Toolkit](http://www.rocksclusters.org).
       - department: Department of Computer Science and Engineering
         web: cse.ucsd.edu
         title: Programmer/Analyst III
         dates: Jun. 1999 - May 2000
         desc:
-          - Developed (C/C++) a lock-free shared memory transport for MPI with custom firmware for Myrinet network cards.
+          - Developed (C, C++) a lock-free shared memory transport for MPI with custom firmware for Myrinet network cards.
           - md//Supported research users at the National Center for Supercomputing Applications ([NCSA](http://ncsa.illinois.edu)).
           - Managed Windows NT clusters for research group.
 
@@ -67,7 +67,7 @@ experience:
         title: Systems Programmer, Principal
         dates: Feb. 1996 - Jun. 1999
         desc:
-          - Developed (C/C++) networking protocols (IPv6, IPSec) and drivers for embedded and user-space operating systems (Scout, x-kernel).
+          - Developed (C, C++) networking protocols (IPv6, IPSec) and drivers for embedded and user-space operating systems (Scout, x-kernel).
           - Ported user-space networking stack into the Linux kernel.
           - Managed software releases, user support, and prepared grant reports.
 
@@ -76,7 +76,7 @@ experience:
       - title: Software Engineer
         dates: Jun. 1991 - Feb. 1996
         desc:
-          - Embedded (Z80, 80186) development (C/C++, ASM) for lightning detecting weather sensors.
+          - Embedded (Z80, 80186) development (C, C++, ASM) for lightning detecting weather sensors.
           - Integrated first generation GPS units into sensors for high resolution time keeping.
           - Ported analysis software from SunOS (BSD) to Solaris (SysV).
 #  - company: Micro-Guys Consulting
