@@ -5,7 +5,7 @@ experience:
       - title: Chief Architect
         dates: August 2020 - present
         desc:
-          - md//Led architecture and development (Go) of system-wide [API](https://github.com/SoftIron/manifold-api) (REST & gRPC) for managing private cloud product.
+          - md//Led architecture and development (Go) of system-wide [API](https://github.com/SoftIron/manifold-api) for managing private cloud product, REST for public API and gRPC for backend micro-services.
           - Led re-architecting and development (Go) of virtual machine snapshotting over Ceph RBD images and S3.
           - Refactor (C, Python, Go) of a propriery SMB stack to provide Highly-Available Windows file sharing over Ceph.
 
