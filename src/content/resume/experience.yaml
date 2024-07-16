@@ -49,7 +49,7 @@ experience:
       - title: Programmer/Analyst III
         dates: May 2000 - Feb. 2002
         desc:
-          - Developed (Python, C) and architected software for building managing Linux High Performance Computing (HPC) commodity clusters.
+          - Developed (Python, C) and architected software for building and managing Linux High Performance Computing (HPC) commodity clusters.
           - md//Open-sourced software as the [Rocks Cluster Toolkit](http://www.rocksclusters.org).
       - department: Department of Computer Science and Engineering
         web: cse.ucsd.edu
@@ -68,7 +68,7 @@ experience:
         title: Systems Programmer, Principal
         dates: Feb. 1996 - Jun. 1999
         desc:
-          - Developed (C, C++) networking protocols (IPv6, IPSec) and drivers for embedded and user-space operating systems (Scout, x-kernel).
+          - Developed (C, C++) networking protocols (IPv6, IPSec) and video drivers for embedded and user-space operating systems (Scout, x-kernel).
           - Ported user-space networking stack into the Linux kernel.
           - Managed software releases, user support, and prepared grant reports.
 
