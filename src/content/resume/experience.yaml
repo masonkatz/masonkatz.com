@@ -27,8 +27,8 @@ experience:
         dates: Feb. 2011 - July 2017
         desc:
           - Partnered with Amazon to provide AWS Marketplace tools to build linux clusters inside of EC2.
-          - Architected and developed (Python) closed-source extensions to Rocks to expand beyond HPC systems and into general purpose datacenter workloads.
-          - Software sold to Enterprise accounts, with largest users running 3000+ nodes.
+          - Architected and developed (Python) closed-source extensions to Rocks for InfiniBand, GPU, Hadoop, Virtualization, and database workloads.
+          - Sold into to Enterprise accounts, with largest users running 3000+ nodes.
           - md//Open-sourced extensions as [Stacki](http://github.com/Teradata/stacki).
       # - title: Board Member
       #   dates: Nov 2006 - May 2014
@@ -43,7 +43,7 @@ experience:
         desc:
           - Managed software team while functioning as a lead developer and architect.
           - Developed (Python, C++) cluster solutions for tile-display visualization clusters, and grids of clusters.
-          - Grew Rocks opensource community from few hundred to several thousand (with 10k+ clusters world-wide, and multiple Top500 systems).
+          - Grew Rocks open-source community from few hundred to several thousand (with 10k+ clusters world-wide, and multiple Top500 systems).
           - Co-Principal Investigator on multiple National Science Foundation (NSF) grants.
           - Managed Linux clusters for research users.
       - title: Programmer/Analyst III
