@@ -27,7 +27,7 @@ experience:
         dates: Feb. 2011 - July 2017
         desc:
           - Partnered with Amazon to provide AWS Marketplace tools to build linux clusters inside of EC2.
-          - Architected and developed (Python) closed-source extensions to Rocks for InfiniBand, GPU, Hadoop, Virtualization, and database workloads.
+          - Architected and developed (Python) closed-source extensions to Rocks for InfiniBand, GPU, Hadoop, virtualization, and database workloads.
           - Sold into to Enterprise accounts, with largest users running 3000+ nodes.
           - md//Open-sourced extensions as [Stacki](http://github.com/Teradata/stacki).
       # - title: Board Member
