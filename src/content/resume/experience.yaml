@@ -18,12 +18,13 @@ experience:
           - Led integration of StackIQ intellectual property into Teradata mainline database and machine learning products.
           - Enabled customer support teams to remotely re-provision database systems in the field.
           - Containerized Stacki using Docker for easier development.
+          - Added SLES AutoYaST support in Stacki, previous a RedHat/CentOS only solution.
           - Managed a software architects group, and Kubernetes team (mix of Go developers and SREs).
 
   - company: StackIQ
     note: acquired by Teradata
     position:
-      - title: Co-founder / Chief Technical Officer
+      - title: Co-Founder / Chief Technical Officer
         dates: Feb. 2011 - July 2017
         desc:
           - Partnered with Amazon to provide AWS Marketplace tools to build linux clusters inside of EC2.
@@ -42,14 +43,15 @@ experience:
         dates: Feb. 2002 - Feb. 2011
         desc:
           - Managed software team while functioning as a lead developer and architect.
+          - Enhanced RedHat's Anaconda system installer to be peer-to-peer. A 100 node cluster installed in 12 minutes.
           - Developed (Python, C++) cluster solutions for tile-display visualization clusters, and grids of clusters.
           - Grew Rocks open-source community from few hundred to several thousand (with 10k+ clusters world-wide, and multiple Top500 systems).
           - md//Co-Principal Investigator on multiple National Science Foundation (NSF) grants, [co-authored](/Publications) a dozen peer-reviewed papers on cluster technology.
-          - Managed Linux clusters for research users.
+          - Linux cluster system administration.
       - title: Programmer/Analyst III
         dates: May 2000 - Feb. 2002
         desc:
-          - Developed (Python, C) and architected software for building and managing Linux High Performance Computing (HPC) commodity clusters.
+          - Developed (Python, SQL, C) and architected software for building and managing Linux High Performance Computing (HPC) commodity clusters.
           - md//Open-sourced software as the [Rocks Cluster Toolkit](http://www.rocksclusters.org).
       - department: Department of Computer Science and Engineering
         web: cse.ucsd.edu
