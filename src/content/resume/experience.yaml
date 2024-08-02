@@ -18,7 +18,7 @@ experience:
           - Led integration of StackIQ intellectual property into Teradata mainline database and machine learning products.
           - Enabled customer support teams to remotely re-provision database systems in the field.
           - Containerized Stacki using Docker for easier development.
-          - Added SLES AutoYaST support in Stacki, previous a RedHat/CentOS only solution.
+          - Added SLES AutoYaST support to Stacki, previously a RedHat/CentOS only solution.
           - Managed a software architects group, and Kubernetes team (mix of Go developers and SREs).
 
   - company: StackIQ
