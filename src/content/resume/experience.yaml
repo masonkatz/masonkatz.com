@@ -3,7 +3,7 @@ experience:
     web: softiron.com
     position:
       - title: Chief Architect
-        dates: August 2020 - present
+        dates: August 2020 - August 2024
         desc:
           - md//Lead architecture and development (go) of system-wide [API](https://github.com/SoftIron/manifold-api) (REST & gRPC) for managing private cloud product.
           - Lead re-architecting and development (go) of virtual machine snapshotting over Ceph RBD images and S3.
