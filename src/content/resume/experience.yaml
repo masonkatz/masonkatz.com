@@ -1,4 +1,9 @@
 experience:
+  - company: Teradata
+    web: teradata.com
+    position:
+      - title: Architect
+        dates: October 2024 - present
   - company: SoftIron
     web: softiron.com
     position:
