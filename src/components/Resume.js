@@ -2,7 +2,6 @@ import React from 'react'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-import { H1, H2, H3, H4, H5 } from './Common'
 
 /* #cv p {
  *     text-align: justify;
@@ -78,7 +77,7 @@ export const Section = (props) => (
   <Container style={{ margin: '0' }}>
     <Row>
       <Col xs="12" style={styles.section.title}>
-        <H1>{props.title}</H1>
+        <h2>{props.title}</h2>
         <hr style={{ marginTop: '0', marginBottom: '1em' }}></hr>
       </Col>
     </Row>
@@ -92,24 +91,29 @@ export const Contact = (props) => (
   <>
     <Container>
       <Row>
-        <Col xs={9}>{props.data.private.address}</Col>
-        <Col xs={3} style={styles.contact.web}>
-          {props.data.public.web}
-        </Col>
+        <Col>{process.env.PRIVATE_ADDRESS_STREET}</Col>
+
+        {!props.links ? (
+          <Col xs={12} md={3} style={styles.department.link}>
+            {props.data.public.web}
+          </Col>
+        ) : (
+          <Col xs={12} md={3} style={styles.department.link}>
+            <a href={'http://' + props.data.public.web}>
+              {props.data.public.web}
+            </a>
+          </Col>
+        )}
       </Row>
       <Row>
-        <Col xs={9}>
-          {props.data.private.city}, {props.data.private.state}
+        <Col>
+          {process.env.PRIVATE_ADDRESS_CITY}, {process.env.PRIVATE_ADDRESS_STATE}
         </Col>
-        <Col xs={3} style={styles.contact.email}>
-          {props.data.public.email}
-        </Col>
+        <Col style={styles.contact.email}>{process.env.PRIVATE_EMAIL}</Col>
       </Row>
       <Row>
-        <Col xs={9}>{props.data.private.zipcode}</Col>
-        <Col xs={3} style={styles.contact.phone}>
-          {props.data.private.phone}
-        </Col>
+        <Col>{process.env.PRIVATE_ADDRESS_ZIPCODE}</Col>
+        <Col style={styles.contact.phone}>{process.env.PRIVATE_PHONE}</Col>
       </Row>
     </Container>
     <br />
@@ -121,9 +125,9 @@ export const Employer = (props) => (
     <Container>
       <Row>
         <Col xs={12} md={9}>
-          <H2>{props.name}</H2>
+          <h3>{props.name}</h3>
         </Col>
-        {props.printable ? (
+        {!props.links ? (
           <></>
         ) : (
           <Col xs={12} md={3}>
@@ -135,7 +139,7 @@ export const Employer = (props) => (
       </Row>
       {props.note != null ? (
         <Row>
-          <H5>({props.note})</H5>
+          <h6>({props.note})</h6>
         </Row>
       ) : null}
       {props.children}
@@ -147,9 +151,9 @@ export const Department = (props) => (
   <div>
     <Row>
       <Col xs={12} md={9}>
-        <H3>{props.name}</H3>
+        <h4>{props.name}</h4>
       </Col>
-      {props.printable ? (
+      {!props.links ? (
         <></>
       ) : (
         <Col xs={12} md={3} style={styles.department.link}>
@@ -164,10 +168,10 @@ export const Department = (props) => (
 export const Job = (props) => (
   <div>
     <Row>
-      <Col xs={12} md={9}>
-        <H4>{props.title}</H4>
+      <Col>
+        <h5>{props.title}</h5>
       </Col>
-      <Col xs={12} md={3} style={styles.job.dates}>
+      <Col style={styles.job.dates}>
         <i>{props.dates}</i>
       </Col>
     </Row>
@@ -189,7 +193,7 @@ export const Publication = (props) => {
             <span style={styles.publication.authors}>{props.authors}</span>.{' '}
             <span style={styles.publication.journal}>{props.journal}</span>.{' '}
             <span style={styles.publication.issue}>{props.issue}</span>{' '}
-            {props.printable ? (
+            {!props.links ? (
               <></>
             ) : (
               <span style={styles.publication.link}>
@@ -207,7 +211,7 @@ export const Degree = (props) => (
   <Container>
     <Row>
       <Col xs={12} md={9} style={styles.degree.school}>
-        <H2>{props.school}</H2>
+        <h3>{props.school}</h3>
       </Col>
       <Col xs={12} md={3} style={styles.degree.date}>
         {props.date}

@@ -8,6 +8,19 @@ module.exports = {
   plugins: [
     `gatsby-plugin-sass`,
     {
+      resolve: 'gatsby-plugin-env-variables',
+      options: {
+          allowList: [
+	      'PRIVATE_ADDRESS_STREET',
+	      'PRIVATE_ADDRESS_CITY',
+	      'PRIVATE_ADDRESS_STATE',
+	      'PRIVATE_ADDRESS_ZIPCODE',
+	      'PRIVATE_PHONE',
+	      'PRIVATE_EMAIL'
+	  ],
+      },
+    },
+    {
       resolve: `gatsby-transformer-yaml-plus`,
       options: {
         enableRemark: true,
@@ -20,11 +33,11 @@ module.exports = {
         path: `./src/content/`,
       },
     },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: 'UA-23092909-1',
+      {
+	  resolve: `gatsby-plugin-google-gtag`,
+	  options: {
+              trackingIds: [ 'G-7Z20CPLY74' ],
+	  },
       },
-    },
   ],
 }

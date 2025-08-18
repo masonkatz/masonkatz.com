@@ -6,7 +6,7 @@ export const Experience = (props) => (
   <>
     {props.data.map((e) => (
       <Employer
-        printable={props.printable}
+        links={props.links}
         name={e.company}
         note={e.note}
         web={e.web}
@@ -15,7 +15,7 @@ export const Experience = (props) => (
           <>
             {position.department !== null ? (
               <Department
-                printable={props.printable}
+                links={props.links}
                 name={position.department}
                 web={position.web}
               />
