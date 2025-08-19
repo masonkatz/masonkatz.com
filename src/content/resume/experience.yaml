@@ -4,6 +4,7 @@ experience:
     position:
       - title: Architect
         dates: October 2024 - present
+
   - company: SoftIron
     web: softiron.com
     position:
@@ -75,7 +76,7 @@ experience:
         title: Systems Programmer, Principal
         dates: Feb. 1996 - Jun. 1999
         desc:
-          - Developed (C, C++) networking protocols (IPv6, IPSec) and video drivers for embedded and user-space operating systems (Scout, x-kernel).
+          - md//Developed (C, C++) networking protocols (IPv6, IPSec) and video drivers for embedded and user-space operating systems (Scout, [x-kernel](https://www2.cs.arizona.edu/projects/xkernel).
           - Ported user-space networking stack into the Linux kernel.
           - Managed software releases, user support, and prepared grant reports.
 
