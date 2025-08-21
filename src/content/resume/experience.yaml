@@ -102,7 +102,7 @@ experience:
         desc:
           - md//Developed (C, C++) networking protocols (IPv6, IPSec) and video
             drivers for embedded and user-space operating systems (Scout,
-            [x-kernel](https://www2.cs.arizona.edu/projects/xkernel).
+            [x-kernel](https://www2.cs.arizona.edu/projects/xkernel)).
           - Ported user-space networking stack into the Linux kernel.
           - Managed software releases, user support, and prepared grant reports.
 
