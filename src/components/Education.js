@@ -1,5 +1,5 @@
-import React from 'react'
-import { Degree } from '../components/Resume'
+import React from 'react';
+import { Degree } from '../components/Resume';
 
 export const Education = ({ data }) => (
   <>
@@ -12,4 +12,4 @@ export const Education = ({ data }) => (
       />
     ))}
   </>
-)
+);

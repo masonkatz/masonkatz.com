@@ -1,6 +1,8 @@
 {
-  "endOfLine": "lf",
-  "semi": false,
   "singleQuote": true,
-  "trailingComma": "es5"
+  "jsxSingleQuote": true,
+  "bracketSameLine": true,
+  "proseWrap": "always",
+  "singleAttributePerLine": true
 }
+

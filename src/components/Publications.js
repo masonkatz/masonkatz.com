@@ -1,5 +1,5 @@
-import React from 'react'
-import { Publication } from '../components/Resume'
+import React from 'react';
+import { Publication } from '../components/Resume';
 
 export const Publications = (props) => (
   <>
@@ -17,4 +17,4 @@ export const Publications = (props) => (
       />
     ))}
   </>
-)
+);

@@ -1,7 +1,7 @@
-import React from 'react'
-import Container from 'react-bootstrap/Container'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
+import React from 'react';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 /* #cv p {
  *     text-align: justify;
@@ -71,21 +71,23 @@ const styles = {
       alignSelf: 'center',
     },
   },
-}
+};
 
 export const Section = (props) => (
   <Container style={{ margin: '0' }}>
     <Row>
-      <Col xs="12" style={styles.section.title}>
+      <Col
+        xs='12'
+        style={styles.section.title}>
         <h2>{props.title}</h2>
         <hr style={{ marginTop: '0', marginBottom: '1em' }}></hr>
       </Col>
     </Row>
     <Row>
-      <Col xs="12">{props.children}</Col>
+      <Col xs='12'>{props.children}</Col>
     </Row>
   </Container>
-)
+);
 
 export const Contact = (props) => (
   <>
@@ -94,11 +96,17 @@ export const Contact = (props) => (
         <Col>{process.env.PRIVATE_ADDRESS_STREET}</Col>
 
         {!props.links ? (
-          <Col xs={12} md={3} style={styles.department.link}>
+          <Col
+            xs={12}
+            md={3}
+            style={styles.department.link}>
             {props.data.public.web}
           </Col>
         ) : (
-          <Col xs={12} md={3} style={styles.department.link}>
+          <Col
+            xs={12}
+            md={3}
+            style={styles.department.link}>
             <a href={'http://' + props.data.public.web}>
               {props.data.public.web}
             </a>
@@ -107,7 +115,8 @@ export const Contact = (props) => (
       </Row>
       <Row>
         <Col>
-          {process.env.PRIVATE_ADDRESS_CITY}, {process.env.PRIVATE_ADDRESS_STATE}
+          {process.env.PRIVATE_ADDRESS_CITY},{' '}
+          {process.env.PRIVATE_ADDRESS_STATE}
         </Col>
         <Col style={styles.contact.email}>{process.env.PRIVATE_EMAIL}</Col>
       </Row>
@@ -118,19 +127,23 @@ export const Contact = (props) => (
     </Container>
     <br />
   </>
-)
+);
 
 export const Employer = (props) => (
   <div>
     <Container>
       <Row>
-        <Col xs={12} md={9}>
+        <Col
+          xs={12}
+          md={9}>
           <h3>{props.name}</h3>
         </Col>
         {!props.links ? (
           <></>
         ) : (
-          <Col xs={12} md={3}>
+          <Col
+            xs={12}
+            md={3}>
             <div style={styles.employer.link}>
               <a href={'http://' + props.web}>{props.web}</a>
             </div>
@@ -145,25 +158,30 @@ export const Employer = (props) => (
       {props.children}
     </Container>
   </div>
-)
+);
 
 export const Department = (props) => (
   <div>
     <Row>
-      <Col xs={12} md={9}>
+      <Col
+        xs={12}
+        md={9}>
         <h4>{props.name}</h4>
       </Col>
       {!props.links ? (
         <></>
       ) : (
-        <Col xs={12} md={3} style={styles.department.link}>
+        <Col
+          xs={12}
+          md={3}
+          style={styles.department.link}>
           <a href={'http://' + props.web}>{props.web}</a>
         </Col>
       )}
     </Row>
     {props.children}
   </div>
-)
+);
 
 export const Job = (props) => (
   <div>
@@ -179,11 +197,11 @@ export const Job = (props) => (
       <Col>{props.children}</Col>
     </Row>
   </div>
-)
+);
 
 export const Publication = (props) => {
-  const url = props.web || props.pdf
-  const label = props.web ? 'link' : 'pdf'
+  const url = props.web || props.pdf;
+  const label = props.web ? 'link' : 'pdf';
   return (
     <Container>
       <Row>
@@ -204,28 +222,38 @@ export const Publication = (props) => {
         </Col>
       </Row>
     </Container>
-  )
-}
+  );
+};
 
 export const Degree = (props) => (
   <Container>
     <Row>
-      <Col xs={12} md={9} style={styles.degree.school}>
+      <Col
+        xs={12}
+        md={9}
+        style={styles.degree.school}>
         <h3>{props.school}</h3>
       </Col>
-      <Col xs={12} md={3} style={styles.degree.date}>
+      <Col
+        xs={12}
+        md={3}
+        style={styles.degree.date}>
         {props.date}
       </Col>
     </Row>
     <Row>
-      <Col xs={12} style={styles.degree.degree}>
+      <Col
+        xs={12}
+        style={styles.degree.degree}>
         {props.degree}
       </Col>
     </Row>
     <Row>
-      <Col xs={12} style={styles.degree.major}>
+      <Col
+        xs={12}
+        style={styles.degree.major}>
         {props.major}
       </Col>
     </Row>
   </Container>
-)
+);

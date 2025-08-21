@@ -1,6 +1,6 @@
-import React from 'react'
-import { Employer, Department, Job } from '../components/Resume'
-import parse from 'html-react-parser'
+import React from 'react';
+import { Employer, Department, Job } from '../components/Resume';
+import parse from 'html-react-parser';
 
 export const Experience = (props) => (
   <>
@@ -9,8 +9,7 @@ export const Experience = (props) => (
         links={props.links}
         name={e.company}
         note={e.note}
-        web={e.web}
-      >
+        web={e.web}>
         {e.position.map((position) => (
           <>
             {position.department !== null ? (
@@ -22,14 +21,16 @@ export const Experience = (props) => (
             ) : (
               <></>
             )}
-            <Job title={position.title} dates={position.dates}>
+            <Job
+              title={position.title}
+              dates={position.dates}>
               <ul style={{ paddingLeft: '2em' }}>
                 {position.desc !== null ? (
                   position.desc.map((bullet) => {
                     if (props.printable) {
                       // remove <a> tags for printing (could also do with css)
-                      bullet = bullet.replace(/<a/g, '<span ')
-                      bullet = bullet.replace(/<\/a>/g, '</span>')
+                      bullet = bullet.replace(/<a/g, '<span ');
+                      bullet = bullet.replace(/<\/a>/g, '</span>');
                     }
 
                     return (
@@ -37,13 +38,13 @@ export const Experience = (props) => (
                         {parse(bullet, {
                           replace(node) {
                             if (node.type === 'tag' && node.name === 'p') {
-                              node.name = 'span'
-                              return node
+                              node.name = 'span';
+                              return node;
                             }
                           },
                         })}
                       </li>
-                    )
+                    );
                   })
                 ) : (
                   <></>
@@ -55,4 +56,4 @@ export const Experience = (props) => (
       </Employer>
     ))}
   </>
-)
+);
